@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: gray;
+}
+
+select{
+	 background: white;
+     border: none;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 200px;
+     margin-top: 0;
+}
+h1{
+	height: 10px;
+}
+
+#section-left {
+	width: 20%;
+	height: 80%;
+	background-color: #ECEBEB;
+	display: inline-block;
+	float: left;
+	height: 100vh;
+}
+#section-right {
+	width: 80%;
+	height: 80%;
+	background-color: #ffffff;
+	display: inline-block;
+	float: left;
+	height: 100vh;
+}
+
+#data{
+	width: 200px;
+	height: 200px;
+	margin:15px;
+	background-color: grey;
+	float: left;
+}
+#dataBig{
+	width: 200px;
+	height: 600px	;
+	background-color: grey;
+	float: left;
+}
+
+
+#overview{
+	width: 70%;
+	height: 100%;
+}
+
