@@ -1,24 +1,10 @@
-// var filtrarLab = document.getElementById("sede");
-// filtrarLab.addEventListener("change",clicOpcion);
-// function clicOpcion() {
-// 	var sedes = filtrarLab.value;
-// 	//console.log(sedes)
-// 	//console.log(filtrarLab.options[filtrarLab.selectedIndex].dataset.generacion);
-//  	var generation = filtrarLab.options[filtrarLab.selectedIndex].dataset.generacion;
-//  	// console.log( "Generacion selecionada "+ generation)
-//  	var totalStudents = data[sedes][generation]["students"].length;
-//  	var totalStudents2 = data[sedes][generation]["students"];
-//  	// console.log("Estudiantes selecionadas "+ totalStudents)
-
-//  	var totalStudentsRatings = data[sedes][generation]["ratings"].length;
-//  	// console.log("Ratings selecionados " + totalStudentsRatings)
-//  	// console.log(totalStudentsGlobal);
-//  }
- var select = document.getElementById("sede");
-select.addEventListener('change', filter);
+var select = document.getElementById("sede"); //Variable para guardar la selección del usuario
+select.addEventListener('change', filter);//Creo el evento
 function filter (){
- var selectedIndex =  event.target.selectedIndex;
- var selectedOption = event.target[selectedIndex];
- var office= selectedOption.dataset.sede;
- var generation = selectedOption.dataset.generation;
+ var selectedIndex =  event.target.selectedIndex;//devuelve el indice del elemento 
+ var option = event.target[selectedIndex];
+ var location = option.dataset.sede;//accediendo a la data para obtener la sede 
+ var generation = option.dataset.generacion;//accediendo a la data para obtener la generación
+ var students = data[location][generation]['students'];
+ console.log(students)
 }
